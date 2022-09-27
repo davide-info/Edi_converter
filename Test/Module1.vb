@@ -58,7 +58,7 @@ Module Module1
         Console.WriteLine(nadCodConsElem)
         'Console.WriteLine(mitElement)
 
-        If CHECK_NAD_CODCONS_418_1 = "M" And dest1Element.Value.Trim() <> "02754690242" Then
+        If CHECK_NAD_CODCONS_418_1 = "M" And dest1Element.Value <> "02754690242" Then
 
             nadCodConsElem.Value = mitElementCodf.Value
 
@@ -73,7 +73,8 @@ Module Module1
 
 
         End If
-
+        Dim newElement = Xelement2.Element("MIT")
+        Console.WriteLine(newElement.Value)
 
         Xelement1.Save(fileName1)
         Console.WriteLine("FILE  SALVAto")
