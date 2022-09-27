@@ -68,7 +68,7 @@ Module Module1
         Console.WriteLine(nadQConsElem)
         '' Console.WriteLine(Xelement1.Element("NAD"))
         If CHECK_NAD_CODCONS_418_1 = "M" Then
-
+            nadQConsElem.Value = "92"
 
 
 
